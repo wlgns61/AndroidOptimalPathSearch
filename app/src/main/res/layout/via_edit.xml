@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
+    tools:context=".Activity.ViaEditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="경유지 목록"
+                android:textAlignment="center"
+                android:textSize="12pt">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/viaAddButton"
+                android:layout_width="95dp"
+                android:layout_height="40dp"
+                android:background="@drawable/round_corner_button"
+                android:text="경유지 추가"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viaLinear"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:orientation="vertical"
+            android:background="@drawable/layout_round_border">
+
+            <TextView
+                android:id="@+id/delExplain"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="※삭제하려면 항목을 터치하세요."
+                android:textColor="@color/quantum_googred"
+                android:background="@color/quantum_grey100"
+                android:textAlignment="center"
+                android:textSize="6.5pt"
+                android:layout_margin="5dp">
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_margin="15dp"
+                xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/viaList">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/viaSubmitButton"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/round_corner_button"
+                android:text="완료"
+                android:textSize="8pt" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

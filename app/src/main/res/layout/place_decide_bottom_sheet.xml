@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/placeBottomSheet"
+    android:background="@drawable/round_corner"
+    android:padding="15dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_draggable="false"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="220dp"
+    app:behavior_fitToContents="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/decideTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12pt">
+        </TextView>
+        <TextView
+            android:id="@+id/decideAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="9pt"
+            android:textColor="@color/quantum_grey">
+        </TextView>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/decideButton"
+            android:background="@drawable/layout_round_border">
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

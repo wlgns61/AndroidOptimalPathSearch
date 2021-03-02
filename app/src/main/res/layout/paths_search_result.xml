@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
+    tools:context=".Activity.ViaEditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/startInfo"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text=""
+                android:textSize="9.5pt"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/places_text_black_alpha_87">
+            </TextView>
+            <TextView
+                android:id="@+id/viaInfo"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text=""
+                android:textSize="9.5pt"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/places_text_black_alpha_87">
+            </TextView>
+            <TextView
+                android:id="@+id/endInfo"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text=""
+                android:textSize="9.5pt"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/places_text_black_alpha_87">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_round_border"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/selExplain"
+                android:layout_height="20dp"
+                android:layout_width="match_parent"
+                android:text="※원하는 항목을 선택하세요."
+                android:background="@color/quantum_grey100"
+                android:textColor="@color/quantum_googred"
+                android:textAlignment="center"
+                android:textSize="6.5pt"
+                android:layout_margin="5dp">
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/pathList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/backButton1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/round_corner_button"
+            android:text="뒤로 가기"
+            android:textSize="8pt"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
