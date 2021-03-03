@@ -8,7 +8,7 @@
 2. main-> Service-> ApiCaller class에 각 메소드 별로 네이버 Geocoding, Reverse Geocoding, driving5, Search Place API의 인증 ID, Secret Key 요구 
 
 # 개발 목적
-경유지를 랜덤하게 입력하였을 때 최소 비용, 최소 경로, 최소 요금으로 모든 경유지를 방문하는 순서를 결정
+경유지를 랜덤하게 입력하였을 때 최소 비용, 최소 , 최소 요금으로 모든 경유지를 방문하는 순서를 결정
 
 # 기능 개요
 1. 출발지는 반드시 설정이 되어야함, 초기 값은 자신의 현위치로 설정  
